@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: api
+server:
+  port: 5555
+zuul:
+  routes:
+    hello-service:
+      path: /hello-services/*
+      url: http://localhost:8001
